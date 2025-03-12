@@ -7,7 +7,6 @@ import data from '@/lib/data';
 
 export default function Page() {
   const { filters, filtersData } = useFilter();
-  console.log(filters);
   const autosFiltrados =
     filters.marca !== 'all' &&
     filters.modelo !== 'all' &&
@@ -20,7 +19,7 @@ export default function Page() {
     <>
       <CammonSection />
       <FiltroButton />
-      <ListOfCard />
+      <ListOfCard data={data} />
     </>
   );
 }

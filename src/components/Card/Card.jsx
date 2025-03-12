@@ -26,7 +26,11 @@ const CarCard = (props) => {
             </div>
           )}
           <div className='w-full h-full flex items-center justify-center'>
-            <img src={imagenes} alt='' />
+            <img
+              src={imagenes[0]?.src}
+              alt={marca}
+              className='object-cover h-56 w-full'
+            />
             {/* <Image
               src={imagenes[0].src}
               alt='Imagen'

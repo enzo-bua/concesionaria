@@ -1,3 +1,4 @@
+'use client';
 import ListOfCard from '../ListOfCard/ListOfCard';
 import data from '@/lib/data';
 

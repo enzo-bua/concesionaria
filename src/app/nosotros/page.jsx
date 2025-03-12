@@ -9,7 +9,7 @@ export default function Page() {
       <ContactButtons />
 
       <CammonSection />
-      <section className='py-8 '>
+      <section className='py-8 min-h-screen'>
         <div className='container mx-auto px-4'>
           <div className='text-center mb-8'>
             <h2 className='text-3xl font-semibold text-gray-900'>

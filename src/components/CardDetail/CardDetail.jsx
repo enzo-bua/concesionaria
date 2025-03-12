@@ -17,8 +17,10 @@ import BottonWhatsapp from '../ButtonWhatsapp/BottonWhatsapp';
 
 export default function CardDetail({ id }) {
   const singleCarItem = data.find((item) => String(item.id) === id);
+  console.log(singleCarItem);
   const marcaIgual = data.filter(
-    (item) => item.marca === singleCarItem.marca && item.id !== singleCarItem.id
+    (item) =>
+      item.marca === singleCarItem?.marca && item.id !== singleCarItem.id
   );
   const {
     marca,
